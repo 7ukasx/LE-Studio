@@ -1,0 +1,42 @@
+
+export enum ToolType {
+  DASHBOARD = 'DASHBOARD',
+  IMAGE_EDITOR = 'IMAGE_EDITOR',
+  IMAGE_CONVERTER = 'IMAGE_CONVERTER',
+  QR_GENERATOR = 'QR_GENERATOR',
+  BINARY_CONVERTER = 'BINARY_CONVERTER',
+  METADATA_CHANGER = 'METADATA_CHANGER',
+  COLOR_CONVERTER = 'COLOR_CONVERTER',
+  GRADIENT_GENERATOR = 'GRADIENT_GENERATOR',
+  LOREM_IPSUM = 'LOREM_IPSUM',
+  UNIT_CONVERTER = 'UNIT_CONVERTER',
+  JSON_FORGE = 'JSON_FORGE',
+  TEXT_METRICS = 'TEXT_METRICS',
+  BASE64_ENGINE = 'BASE64_ENGINE',
+  MARKDOWN_STUDIO = 'MARKDOWN_STUDIO',
+  GLASSMorphism = 'GLASSMorphism',
+  IMAGE_OPTIMIZER = 'IMAGE_OPTIMIZER',
+  SVG_WORKSPACE = 'SVG_WORKSPACE',
+  SVG_MAKER = 'SVG_MAKER',
+  SOUND_MIXER = 'SOUND_MIXER',
+  PERFORMANCE_MONITOR = 'PERFORMANCE_MONITOR',
+  TYPING_TEST = 'TYPING_TEST',
+  DOCUMENT_CONVERTER = 'DOCUMENT_CONVERTER',
+  VIDEO_EDITOR = 'VIDEO_EDITOR',
+  PDF_EDITOR = 'PDF_EDITOR',
+  CODE_FORGE = 'CODE_FORGE'
+}
+
+export interface ToolInfo {
+  id: ToolType;
+  name: string;
+  description: string;
+  icon: string;
+}
+
+/**
+ * Standard props for all tool components in the studio
+ */
+export interface ToolProps {
+  onNotify?: (message: string, type?: 'success' | 'info' | 'error') => void;
+}

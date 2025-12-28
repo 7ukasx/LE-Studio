@@ -1,0 +1,8 @@
+
+{
+  "name": "LE Creative Tools",
+  "description": "A comprehensive suite of creative and utility tools including a Photoshop-like image editor, converters, and generators, designed with a sleek minimalist dark aesthetic.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
